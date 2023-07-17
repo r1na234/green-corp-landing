@@ -8,8 +8,17 @@
 integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+  
+  <script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+  <script src = "js/smoothScroll.js" defer></script>
 </head>
 <body>
+  <div class="wrapper">
+		<div class="content">
+
 
     <header>
         <img class="header__logo" src="img/logo.svg">
@@ -62,7 +71,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
         <h2>
            Нам доверяет
           <br>
-           5000+ счастливых клиентов
+          <div class ='features__clients-count'>5000+</div> счастливых клиентов
         </h2>
         <p>
            Мы помогли тысячам людей перейти на зеленую энергию.
@@ -162,6 +171,12 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
         </div>
         <div class=" footer__copyright">GreenCorp © 2021.</div>
     </footer>
+
+  </div>
+</div>
+
 <script src = "js/canvas.js"> </script>
+<script src="js/animations.js"></script>
+ 
 </body>
 </html>
