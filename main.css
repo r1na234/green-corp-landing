@@ -4,6 +4,7 @@ body {
     margin: 0;
   }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,8 @@ header {
 
 .about__image {
     width: 500px;
+    transform: translate3d(0, calc(var(--scrollTop)/7),0);
+    transition: transform .75s cubic-bezier(.075, .5, 0, 1);
   }
    
 .about__sun-image {
@@ -54,8 +57,8 @@ header {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: absolute;
-
   }
+
   @keyframes rotation{
         0%{
           transform: rotate(0deg);
@@ -403,7 +406,7 @@ button:hover{
  }
   
 
- @media (max-width: 720px) {
+ @media (max-width: 750px) {
     header {
         padding: 10px;
     }
@@ -491,4 +494,22 @@ button:hover{
     .footer__container {
         flex-direction: column;
     }
+ }
+
+
+ @media (max-width: 400px){
+  .promo__image {
+    width: 100%;
+    height: 300px;
+  }
+
+.form__container{
+  max-width: 87%;
+  
+}
+
+.form__submit{
+  max-width: 80%;
+}
+
  }
