@@ -44,6 +44,7 @@ header {
 
 
 .about__image {
+  will-change: transform;
     width: 500px;
     transform: translate3d(0, calc(var(--scrollTop)/7),0);
     transition: transform .75s cubic-bezier(.075, .5, 0, 1);
